@@ -1,0 +1,35 @@
+[core]
+  editor = vim
+  quotepath = false
+	autocrlf = true
+[color]
+  ui = auto
+[user]
+	name = Kenichi KANOH
+	email = k.kanoh@cixi.sakura.ne.jp
+[pull]
+  rebase = true                                   # SVNのようにHEADにローカルコミットを乗せる falseだとpull時にローカルコミットをマージするマージコミットを作る
+[merge]
+  ff = false                                      # merge時にffでもマージコミットを作る 変なログにしたくないので squash mergeする時は--ffを付ける
+[fetch]
+  prune = true                                    # リモートブランチが消えたら追跡ブランチも自動で消す (local)aaa:(追跡)origin/aaa:(remote)aaaの関係
+[rebase]
+  autosquash = true                               # rebase時にfixup!コミットを自動で並べ替える rebase -i [--autosquash]を省略できる
+  rebaseMerges = true                             # rebase時にマージコミットを残す rebase -i [--rebase-merges]を省略できる
+[alias]
+  rm2 = rm --cached                               # インデックスから削除 ファイルを残す --cachedなしだとファイルも消える
+  pushf = push --force
+  ncommit = commit --allow-empty-message -m \"\"
+  r10 = rebase -i @~10
+  r20 = rebase -i @~20
+  rabo = rebase --abort
+  rcon = rebase --continue
+  rsame = rebase --committer-date-is-author-date
+[safe]
+  directory = *
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = false
+	keepBackup = false

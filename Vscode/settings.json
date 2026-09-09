@@ -36,14 +36,6 @@
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
-  "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    },
-    // "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
-  },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -68,12 +60,15 @@
   "bladeFormatter.format.sortHtmlAttributes": "code-guide",
   "bladeFormatter.format.sortTailwindcssClasses": true,
   "bladeFormatter.format.wrapLineLength": 160,
+  "blockman.n21BorderRadius": 0,
+  "blockman.n32BlackListOfFileFormats": "^python",
   "chat.disableAIFeatures": true,
+  "claudeCode.focusView": true,
   "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "claude-sonnet-4-6",
   "css.lint.unknownAtRules": "ignore",
   "debug.javascript.codelens.npmScripts": "never",
-  "diffEditor.ignoreTrimWhitespace": true,
+  "delphiLsp.executable": "C:\\Program Files (x86)\\Embarcadero\\Studio\\23.0\\bin\\DelphiLSP.exe",
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.autoSurround": "never",
@@ -93,6 +88,7 @@
     "*.lock": "plaintext"
   },
   "files.autoGuessEncoding": true,
+  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
   "files.restoreUndoStack": false,
   "files.watcherExclude": {
@@ -102,7 +98,7 @@
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "less.lint.unknownAtRules": "ignore",
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1771137586934,
+  "php-cs-fixer.lastDownload": 1787641891663,
   "prettier.documentSelectors": [
     "**/*.blade.php"
   ],
@@ -133,6 +129,8 @@
     "terminalCursor.foreground": "#FFEEFF"
   },
   "workbench.colorTheme": "Light High Contrast Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "blockman.n20CustomColorOfDepth0Border": "none",
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "material-icon-theme"
+  "python.createEnvironment.trigger": "off"
 }
